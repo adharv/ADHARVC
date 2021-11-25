@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animated Web Design</title>
+</head>
+
+<body>
+    <div class="navbar">
+        <p class="logo">Convertical</p>
+        <button>Sign Up</button>
+    </div>
+    <div class="content">
+        <small>Welcome to our</small>
+        <h1>World's <br> Creative Studio</h1>
+        <button>Take a tour</button>
+
+    </div>
+    <div >
+        <div class="deform">
+            <div class="rotate">
+            <div class="counterrotate">
+            <div class="inner">
+                <img src="media/bubbles.png" alt="">
+         
+
+            </div>
+            </div>
+            </div>
+            </div>
+    
+    </div> 
+    <style>
+        body {
+            background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(media/backpicture.jpeg);
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+
+
+        }
+
+        .logo {
+            width: 100%;
+            cursor: pointer;
+        }
+
+        .navbar {
+            width: 85%;
+            height: 15%;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        button {
+            color: #fbfcfd;
+            padding: 10px 25x;
+            background: transparent;
+            border: 1px solid #fff;
+            border-radius: 20px;
+            outline: none;
+            cursor: pointer;
+
+
+        }
+
+        .content {
+            color: #fbfcfd;
+            position: absolute;
+            top: 50%;
+            left: 8%;
+            transform: translateY(-50%);
+            z-index: 2;
+        }
+
+        h1 {
+            font-size: 80px;
+            margin: 10px 0 30px;
+            line-height: 80px;
+        }
+
+        small {
+            font-size: 20px;
+        }
+
+        .side-bar {
+            width: 50px;
+            height: 100vh;
+            background: linear-gradient(#00545d, #000729);
+            position: absolute;
+            right: 0;
+            top: 0;
+        }
+
+
+
+
+        .deform  {
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    left: 270px;
+    position: absolute;
+    top: 50px;
+    border-radius: 50%;
+    border: 2px black solid;
+}
+
+.rotate {
+    width: 100%;
+    height: 100%;
+    -webkit-animation: circle 10s infinite linear;    
+    -webkit-transform-origin: 50% 50%;
+}
+
+.counterrotate {
+    width: 50px;
+    height: 50px;
+    -webkit-animation: ccircle 10s infinite linear;    
+}
+    
+.inner {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+ 
+}
+.inner img{
+    width: 100%;
+    height: 100%;
+  
+}
+
+@-webkit-keyframes circle {
+    from {-webkit-transform: rotateZ(0deg)}
+    to {-webkit-transform: rotateZ(360deg)}
+}
+
+@-webkit-keyframes ccircle {
+    from {-webkit-transform: rotateZ(360deg)}
+    to {-webkit-transform: rotateZ(0deg)}
+}
+   
+
+    .bubbles img :nth-child(1){
+            animation-delay: 2s;
+        }
+
+        .bubbles img :nth-child(2){
+            animation-delay: 1s;
+        }
+
+        .bubbles img :nth-child(3){
+            animation-delay: 3s;
+        }
+
+        .bubbles img :nth-child(4){
+            animation-delay: 4.5s;
+        }
+
+        .bubbles img :nth-child(5){
+            animation-delay: 3s;
+        }
+
+        .bubbles img :nth-child(7){
+            animation-delay: 6s;
+        }
+
+        .bubbles img :nth-child(1){
+            animation-delay: 7s;
+        }
+   
+    </style>
+
+
+</body>
+
+</html>
